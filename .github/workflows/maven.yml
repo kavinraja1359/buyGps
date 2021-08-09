@@ -24,7 +24,7 @@ jobs:
         distribution: 'adopt'
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-    - run: cd ~/actions-runner/deploy/buyGps/buyGps/buyGps
+    - run: cd ~/actions-runner/deploy/buyGps/buyGps/buyGPS
     - run: sudo docker container stop buyGps-container || true
     - run: sudo docker container stop postgres-container || true
     - run: sudo docker container rm buyGps-container || true
